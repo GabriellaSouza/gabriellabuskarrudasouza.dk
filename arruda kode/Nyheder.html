@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="nyhederstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Palanquin+Dark:700" rel="stylesheet">
+    <title> A R R U D A </title>
+    <link rel="icon" type="image/ico" href="favicon.png"/>
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+  </head>
+  <body>
+    <!-- KURV -->
+    <a href="kurv.html"><img class="kurv" src="shopping-bag-solid.svg" width="20" align="right"/>
+    </a>
+<h1>A R R U D A </h1>
+
+<!-- MENU-->
+<div class="btn-group" style="width:100%">
+<a href="Nyheder.html"><button style="width:33.3%">NYHEDER</button></a>
+
+<div class="dropdown">
+  <a href="#"><button style="width:33.3%" onclick="myFunction()" class="dropbtn">SHOP</button></a>
+  <div id="myDropdown" class="dropdown-content">
+
+    <a href="index.html">Bluser</a>
+    <a href="#base">Bukser</a>
+    <a href="#blog">Sko</a>
+    <a href="#contact">Undertøj</a>
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content
+
+id="myInput"
+<input type="text" onkeyup="filterFunction()">
+
+*/
+function myFunction() {
+document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+var input, filter, ul, li, a, i;
+input = document.getElementById("myInput");
+filter = input.value.toUpperCase();
+div = document.getElementById("myDropdown");
+a = div.getElementsByTagName("a");
+for (i = 0; i < a.length; i++) {
+txtValue = a[i].textContent || a[i].innerText;
+if (txtValue.toUpperCase().indexOf(filter) > -1) {
+a[i].style.display = "";
+} else {
+a[i].style.display = "none";
+}
+}
+}
+</script>
+
+
+<a href="Mærker.html">  <button style="width:33.4%">MÆRKER</button></a>
+</div>
+
+<!-- FILTERKNAPPEN-->
+    <div class="filterknap" style="width:100%">
+      <button style="width:100%">Filtrer</button>
+    </div>
+
+<!-- RØD KJOLE BILLED-->
+<div class="pic" style="text-align:center"><img src="rødkjole.jpeg" width="300" />
+</div>
+
+<!-- TEXTBOX-->
+<div id="textbox">
+  <p class="alignleft">Rød kjole</p>
+  <p class="alignright">499,-</p>
+</div>
+<div style="clear: both;"></div>
+
+<!-- Blå kjole BILLED-->
+<div class="pic" style="text-align:center"><img src="blåkjole.jpeg" width="300" />
+</div>
+
+<!-- TEXTBOX-->
+<div id="textbox">
+  <p class="alignleft">Blå kjole</p>
+  <p class="alignright">399,-</p>
+</div>
+<div style="clear: both;"></div>
+
+<!-- SWEATER BILLED-->
+<div class="pic" style="text-align:center"><img src="sweater.jpeg" width="300" />
+</div>
+
+<!-- TEXTBOX-->
+<div id="textbox" class="bottommargin">
+  <p class="alignleft">Sweater</p>
+  <p class="alignright">299,-</p>
+</div>
+<div style="clear: both;"></div>
+
+
+<!-- TOP KNAP -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+
+<!--- footer --->
+<footer>
+  <div class="btn-group" style="width:100%">
+    <a href="Nyheder.html"><button style="width:50%">Facebook</button></a>
+    <a href="index.html"><button style="width:50%">Instagram</button></a>
+  </div>
+
+  <div class="btn-group" style="width:100%">
+    <a href="Nyheder.html"><button style="width:50%">Om os</button></a>
+    <a href="index.html"><button style="width:50%">Salgsbetingelser</button></a>
+  </div>
+</footer>
+
+  </body>
+</html>
